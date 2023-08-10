@@ -513,7 +513,7 @@ input::placeholder {
   margin-right: 8px;
 }
 
-input:checked + label > span {
+.visually-hidden:checked + label > span {
   background-color: var(--ocean, #404bbf);
   border: none;
   fill: var(--cloud, #f4f4fd);

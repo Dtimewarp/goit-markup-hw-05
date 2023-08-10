@@ -451,7 +451,7 @@ input::placeholder {
   position: relative;
 }
 
-.input-text {
+.input-content {
   width: 100%;
   height: 40px;
   border: 1px solid rgba(46, 47, 66, 0.4);
@@ -462,12 +462,56 @@ input::placeholder {
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-input:focus {
+.input-content:focus {
   border-color: var(--iris, #4d5ae5);
 }
 
-input:focus + svg {
+.input-content:focus + svg {
   fill: var(--iris, #4d5ae5);
+}
+
+.comment-content {
+  width: 100%;
+  height: 120px;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
+  color: rgba(46, 47, 66, 0.4);
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  border-radius: 4px;
+  background-color: transparent;
+  padding: 8px 16px;
+  outline: transparent;
+  resize: none;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.comment-content:focus {
+  border-color: var(--iris, #4d5ae5);
+}
+
+.checkbox-container {
+  margin-bottom: 24px;
+}
+
+.checkbox-item {
+  width: 16px;
+  height: 16px;
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  border-radius: 2px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  fill: transparent;
+}
+
+input:checked {
+  background-color: var(--ocean, #404bbf);
+  border: none;
+  fill: var(--cloud, #f4f4fd);
 }
 
 /**

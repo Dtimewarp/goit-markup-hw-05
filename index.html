@@ -514,8 +514,28 @@
             </li>
           </ul>
         </div>
+
+        <div class="subscribe-form-container">
+          <form class="subscribe-form">
+            <label class="subscribe-form-label">
+              Subscribe
+              <input
+                class="subscribe-form-input"
+                type="email"
+                placeholder="E-mail"
+              />
+            </label>
+            <button class="subscr-btn" type="submit">
+              Subscribe
+              <svg class="subcr-icon-fill" width="24" height="24">
+                <use href="./images/icons.svg#subscribeicon"></use>
+              </svg>
+            </button>
+          </form>
+        </div>
       </div>
     </footer>
+
     <!-- Modal window -->
     <div class="backdrop is-hidden" data-modal>
       <div class="modal-window">
@@ -524,6 +544,41 @@
             <use href="./images/icons.svg#closeicon"></use>
           </svg>
         </button>
+
+        <form class="modal-form-container">
+          <fieldset class="modal-form-group">
+            <legend class="legend">
+              Leave your contacts and we will call you back
+            </legend>
+            <label class="label-title">
+              Name
+              <input class="input" type="text" />
+            </label>
+            <label class="label-title">
+              Phone
+              <input class="input" type="tel" />
+            </label>
+            <label class="label-title">
+              Email
+              <input class="input" type="email" />
+            </label>
+            <label class="label-title">
+              Comment
+              <textarea
+                class="input"
+                name=""
+                rows=""
+                placeholder="Text input"
+              ></textarea>
+            </label>
+
+            <div class="checkbox-license-container">
+              <input class="checkbox" type="checkbox" name="" value="" />
+              <p>I accept the terms and conditions of the Privacy Policy</p>
+            </div>
+            <button type="submit">Send</button>
+          </fieldset>
+        </form>
       </div>
     </div>
     <script src="./js/modal.js"></script>
